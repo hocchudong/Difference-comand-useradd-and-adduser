@@ -3,11 +3,25 @@ Difference-comand-useradd-and-adduser-
 
 Khái quát về tài khoản trong linux và sự khác nhau giữa 2 cách tạo tài khoản 'useradd' và 'adduser'
 
-Mục lục
+[Mục lục](#undefined)
+				
+- [1. Khái niệm](#user-content-1-kh%C3%A1i-ni%E1%BB%87m)
+					
+    - [a. Chỉ số UID](#user-content-a-ch%E1%BB%89-s%E1%BB%91-uid)
+					
+    - [b. Chỉ số GID](#user-content-b-ch%E1%BB%89-s%E1%BB%91-gid)
+			
+- [2. Cách tạo người sử dụng](#user-content-2-c%C3%A1ch-t%E1%BA%A1o-ng%C6%B0%E1%BB%9Di-s%E1%BB%AD-d%E1%BB%A5ng)
+					
+    - [a. Sử dụng lệnh useradd](#user-content-a-s%E1%BB%AD-d%E1%BB%A5ng-l%E1%BB%87nh-useradd)
+					
+    - [b. Sử dụng lệnh adduser](#user-content-b-s%E1%BB%AD-d%E1%BB%A5ng-l%E1%BB%87nh-adduser)
+			
+- [3. Sự khác nhau giữa 2 câu lệnh](#user-content-3-s%E1%BB%B1-kh%C3%A1c-nhau-gi%E1%BB%AFa-2-c%C3%A2u-l%E1%BB%87nh)
+			
+- [4. Một số lệnh liên quan](#user-content-4-m%E1%BB%99t-s%E1%BB%91-l%E1%BB%87nh-li%C3%AAn-quan)
 
-1. Khái niệm
-
-2. Các tạo người sử dụng
+- [5. Kết luận:](#user-content-5-k%E1%BA%BFt-lu%E1%BA%ADn)
 
 =========
 ##### 1. Khái niệm
