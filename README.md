@@ -82,10 +82,44 @@ Sau khi nhập xong câu lệnh lúc này hệ thống sẽ hiện ra các câu 
   Khi bạn dùng phiên bản Debian tiêu biểu là Ubuntu bạn sẽ thấy rõ sự khác nhau giữa 2 câu lệnh này. Câu lệnh useradd sử dụng tất cả các thông số mà khi người root nhập vào để tạo tài khoản. Còn đối với cách tạo sử dụng câu lệnh adduser hệ thống sẽ tương tác trực tiếp với người tạo để đưa ra các câu hỏi. Qua đó giúp người sử dụng dễ dàng tạo hơn. Còn về quan điểm cá nhân tôi thích các sử dụng useradd hơn vì đơn giản là nó sẽ phát huy được tác dụng khi tôi viết một scrips.
   
   Còn đối với phiên bản như Centos. sự khác nhau ở đây là ít hơn. Lúc đó khi sử dụng adduser hệ thống sẽ tạo luôn một tài khoản và bạn cần thực hiện thêm một số câu lệnh để có thể thêm mật khẩu và thông tin liên quan
-  
-#### 4. Kết luận:
 
-Bài viết ngày hôm nay tôi điêm quan cho các bạn năm lại về các loại tài khoản người dùng trong Linux và tìm hiểu một thông số UID GID và sự khác nhau giữa 2 cách tạo tài khoản trong linux mà chưa đề cập đến các vấn đề như là chỉnh sửa, xóa đối với tài khoản(thời gian tới tôi sẽ bổ sung cái này). Hi vọng các bạn đọc xong bài viết này sẽ reveiw lại kiến thức cũng như bổ sung thêm kiến thức. Thân!!!
+#### 4. Một số lệnh liên quan
+
+Đối với nhóm lênh này bạn phải vào tài khoản root để có thể thực hiện được
+
+- Tạo group:
+```
+#groupadd <Tên group>
+```
+- Xóa group
+```
+#groupdel <Tên group>
+```
+- Xóa tài khoản người dùng
+```
+#userdel <Tên tài khoản người dùng>
+```
+- Chỉnh sửa thông tin người dùng
+```
+#usermod [option] [Nội dung chỉnh sửa] <Tài khoản người dùng>
+```
+Với trường option và và nôi dụng bạn muốn chỉnh sửa.
+VD: Chỉnh sửa lại thư mục home của tài khoản 'hoainam'
+```
+#usermod -c 'Nguyen Van Nam' hoainam
+```
+
+#usermod
+- Thay đổi password cho tài khoản người dùng
+Đối với câu lệnh passwd bạn có thể thay đổi tài khoản của chính bạn hoặc có thể đăng nhập bằng tài khoản root để thay đổi tài khoản bất kì của người dùng
+```
+#passwd <Tên tài khoản người dùng>
+```
+Sau đó hệ thống sẽ hỏi bạn thông tin về password mới
+
+#### 5. Kết luận:
+
+Bài viết ngày hôm nay tôi điêm quan cho các bạn năm lại về các loại tài khoản người dùng trong Linux và tìm hiểu một thông số UID GID và sự khác nhau giữa 2 cách tạo tài khoản trong linux và các vấn đề như chỉnh sửa, xóa đối với tài khoản. Hi vọng các bạn đọc xong bài viết này sẽ reveiw lại kiến thức cũng như bổ sung thêm kiến thức. Thân!!!
 Các bạn có thể liên hệ với tôi qua skype `namptit307` để cùng nhau chia sẻ.
 
 
